@@ -1,0 +1,71 @@
+package entities;
+
+public class Manifestacao {
+	
+	public static int sequence = 0;
+	private Integer id;
+	private String titulo;
+	private String descricao;
+	private Tipo tipo;
+	private Situacao situacao;
+	
+	public Manifestacao() {
+		
+	}
+	
+	public Manifestacao(Integer id, String titulo, String descricao, Tipo tipo, Situacao situacao) {
+		this.id = id;
+		this.titulo = titulo;
+		this.descricao = descricao;
+		this.tipo = tipo;
+		this.situacao = situacao;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public Tipo getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(Tipo tipo) {
+		this.tipo = tipo;
+	}
+
+	public Situacao getSituacao() {
+		return situacao;
+	}
+
+	public void setSituacao(Situacao situacao) {
+		this.situacao = situacao;
+	}
+
+	@Override
+	public String toString() {
+		return "Manifestacao [id=" + id + ", titulo=" + titulo + ", descricao=" + descricao + ", tipo=" + tipo
+				+ ", situacao=" + situacao + "]";
+	}
+	
+}
+

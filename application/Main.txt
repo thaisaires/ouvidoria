@@ -1,0 +1,53 @@
+package application;
+
+import entities.Manifestacao;
+import entities.Situacao;
+import entities.Tipo;
+import entities.Usuario;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		System.out.println("\nUSUARIO 1\n");
+		
+		Usuario usuario1 = new Usuario(1, "Thais", "thais.aires", "abc123");
+		Manifestacao manif1 = new Manifestacao(1, "titulo1", "descrição1", Tipo.RECLAMAÇÃO, Situacao.ABERTA);
+		usuario1.add(manif1);
+		Manifestacao manif2 = new Manifestacao(2, "titulo2", "descrição2", Tipo.RECLAMAÇÃO, Situacao.RESOLVIDA);
+		usuario1.add(manif2);
+		Manifestacao manif3 = new Manifestacao(3, "titulo3", "descrição3", Tipo.SUGESTÃO, Situacao.EM_ATENDIMENTO);
+		usuario1.add(manif3);
+		Manifestacao manif4 = new Manifestacao(4, "titulo4", "descrição4", Tipo.ELOGIO, Situacao.RESPONDIDA);	
+		usuario1.add(manif4);
+		usuario1.exibir();
+		
+		System.out.println("\nUSUARIO 2\n");
+		
+		Usuario usuario2 = new Usuario(2, "Lima", "esther e nicole", "def456");
+		Manifestacao manif5 = new Manifestacao(5, "titulo5", "descrição5", Tipo.ELOGIO, Situacao.ABERTA);
+		usuario2.add(manif5);
+		Manifestacao manif6 = new Manifestacao(6, "titulo6", "descrição6", Tipo.SUGESTÃO, Situacao.RESOLVIDA);
+		usuario2.add(manif6);
+		Manifestacao manif7 = new Manifestacao(7, "titulo7", "descrição7", Tipo.RECLAMAÇÃO, Situacao.EM_ATENDIMENTO);
+		usuario2.add(manif7);
+		Manifestacao manif8 = new Manifestacao(8, "titulo8", "descrição8", Tipo.ELOGIO, Situacao.RESPONDIDA);	
+		usuario2.add(manif8);
+		usuario2.exibir();
+		
+		System.out.println("\nUSUARIO 3\n");
+		
+		Usuario usuario3 = new Usuario(3, "Lucas", "lucas.monteiro", "ghi789");		
+		Manifestacao manif9 = new Manifestacao(9, "titulo9", "descrição9", Tipo.ELOGIO, Situacao.ABERTA);
+		usuario3.add(manif9);
+		Manifestacao manif10 = new Manifestacao(10, "titulo10", "descrição10", Tipo.SUGESTÃO, Situacao.RESOLVIDA);
+		usuario3.add(manif10);
+		Manifestacao manif11 = new Manifestacao(11, "titulo11", "descrição11", Tipo.RECLAMAÇÃO, Situacao.EM_ATENDIMENTO);
+		usuario3.add(manif11);
+		Manifestacao manif12 = new Manifestacao(12, "titulo12", "descrição12", Tipo.ELOGIO, Situacao.RESPONDIDA);	
+		usuario3.add(manif12);
+		usuario2.exibir();
+		
+	}
+}
